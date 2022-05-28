@@ -119,6 +119,16 @@
 <button class="btn" onclick="redirect()">NÃO</button>
 </div>
 </div>
+<div id="segunda" class="hide">
+<div class="question">
+<h1>Pergunta 3</h1>
+<p>Gostaria de conhecer o método?</p>
+</div>
+<div class="answer">
+<button class="btn" onclick="terceira()">SIM</button>
+<button class="btn" onclick="terceira()">NÃO</button>
+</div>
+</div>    
 </div>
 <p style="text-align: center; font-weight: bold; color: white;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
 </div>
@@ -126,6 +136,10 @@
     function segunda() {
       document.getElementById("primeira").classList.add("hide")
       document.getElementById("segunda").classList.remove("hide")
+    }
+    function terceira() {
+      document.getElementById("segunda").classList.add("hide")
+      document.getElementById("terceira").classList.remove("hide")
     }
     function redirect() {
       location.href = "https://100semcelulit.online/"
